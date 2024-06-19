@@ -6265,6 +6265,191 @@
     <link as="script" rel="prefetch" href="https://www.arboimoveis.com.br/_next/static/chunks/pages/imovel/%5B...cod_gaia%5D-051e379ef7587214.js">
     <link as="script" rel="prefetch" href="https://www.arboimoveis.com.br/_next/static/chunks/pages/bairros/%5Bbairro%5D-0dd71a2173f45954.js">
     <link as="script" rel="prefetch" href="https://www.arboimoveis.com.br/_next/static/chunks/pages/fale-conosco-7bb3ddeaa3adcfe8.js">
+
+
+
+
+        
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.9.1.min.js"></script>
+
+    <script type="text/javascript">
+    
+        window.addEventListener("load", mediaSizer);
+        //window.addEventListener("resize", mediaSizer);
+        // Listeners that will react when the page first loads or is resized.
+        // If any of these events take place the mediaSizer() function executes.
+    
+        var vizList = [
+    
+        "https://public.tableau.com/views/resultadoarbo/AcompanhamentodeResultado?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link",
+            "https://public.tableau.com/views/HUMANRESOURCES-HRExpensesDashboardBrasilarbo/Cockpit?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link",
+            "https://public.tableau.com/views/FinanasCorporativas-PainelDemonstrativoFinanceirocury/Cockpit-Finance?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link",
+            "https://public.tableau.com/views/FinanasCorporativas-PainelDemonstrativoFinanceiromaxion/Cockpit-Finance?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+    
+            "https://public.tableau.com/views/ExecutiveDashboardgupy/ExecutiveDashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+            "https://demo.tableau.com/t/LuizOliveira/views/2-Template_16836500933620/Template",
+            "https://public.tableau.com/views/3-Exemplogupy/DashExemplo?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+    
+            "https://public.tableau.com/views/Howhastheworldchangedsince1962/WorldIndicators?:language=en-US&:display_count=n&:origin=viz_share_link",
+    
+            "https://public.tableau.com/views/TheTableauChartCatalog/TableauChartExamples",
+    
+            "https://public.tableau.com/views/ProcurementDashboard_6/Home?:apiInternalVersion=1.131.0&:disableUrlActionsPopups=n&navSrc=Opt&:embed=y&navType=0&:suppressDefaultEditBehavior=n&mobile=n&:toolbar=n&:hideEditButton=y&:hideEditInDesktopButton=n&:jsdebug=n&:apiExternalVersion=3.6.0&:display_count=n&:origin=viz_share_link",
+            "https://public.tableau.com/views/ProcurementDashboard_6/Home?:apiInternalVersion=1.131.0&:disableUrlActionsPopups=n&navSrc=Opt&:embed=y&navType=0&:suppressDefaultEditBehavior=n&mobile=n&:toolbar=n&:hideEditButton=y&:hideEditInDesktopButton=n&:jsdebug=n&:apiExternalVersion=3.6.0&:display_count=n&:origin=viz_share_link",
+            "https://public.tableau.com/views/RedfinCOVID-19HousingMarket/NewListings?:embed=y&:sid=&:embed_code_version=3&:loadOrderID=0&:display_count=y&:origin=viz_share_link",
+            "https://public.tableau.com/views/RedfinDataCentertrend/MedianSalePrice?:embed=y&:sid=&:display_count=n&:origin=viz_share_link",
+            "https://public.tableau.com/views/RedfinHomePriceIndex/RepeatSaleIndices?:language=en-US&:embed=y&:sid=&:embed_code_version=3&:loadOrderID=1&:display_count=y&:origin=viz_share_link",
+            "https://public.tableau.com/views/SUPPLYCHAIN-SupplyIntelligence/Home?:apiInternalVersion=1.131.0&:disableUrlActionsPopups=n&navSrc=Opt&:embed=y&navType=0&:suppressDefaultEditBehavior=n&mobile=n&:toolbar=n&:hideEditButton=y&:hideEditInDesktopButton=n&:jsdebug=n&:apiExternalVersion=3.6.0&:display_count=n&:origin=viz_share_link",
+            
+            "https://public.tableau.com/views/1-DesigningEffectiveDashboardsPublic/Intro?:language=en-US&:display_count=n&:origin=viz_share_link",
+            "https://public.tableau.com/views/Embedded_Analytics/Introduo?:language=en-US&:display_count=n&:origin=viz_share_link"
+    
+    
+    
+        ];
+        // Array of Tableau Server URLs for dashboard or sheet navigation.
+    
+        var viz,
+            vizLen = vizList.length,
+            vizCount = 0,
+            devType,
+            vHideTabs = true,
+            vHideToolbar = true;
+        var options = {
+            device: devType,
+        };
+    
+    
+        function mediaSizer() {
+            // Determines the correct viz layout according to screen sizes.
+            if (window.matchMedia("(max-width: 480px)").matches) {
+                //alert("I am a phone layout!");
+                devType = 'phone';
+                vWidth = 450;
+                vHeight = 2000;
+                //options.device = 'phone';
+                console.log("devtype: " + devType)
+            console.log("launch0")
+            vHeight = 2000;
+            launchViz(0);
+            vHeight = 1400;
+            console.log("launch1")
+            launchViz(1);
+            //launchViz(2);
+            vHeight = 4800;
+           // launchViz(4);
+            vHeight = 1900;
+            
+           // launchViz(6);
+            
+            } else if (window.matchMedia("(max-width: 980px)").matches) {
+                //alert("I am a tablet layout!");
+                devType = 'tablet';
+                vWidth = 980;
+                //options.device = 'tablet';
+            } else {
+                //alert("I am a desktop layout!");
+                devType = 'desktop';
+                vWidth = 1900;
+                vHeight = 1000;
+                //options.device = 'desktop';
+                console.log("devtype: " + devType)
+            console.log("launch0")
+            vHeight = 900;
+            vWidth = 1500;
+            launchViz(0);
+            vWidth = 1600;
+            console.log("launch1")
+            launchViz(1);
+            vWidth = 1666;
+            console.log("launch2")
+            vHeight = 1100;
+           // launchViz(2);
+            console.log("launch3")
+            //launchViz(3);
+            vHeight = 1700;
+            vWidth = 1400;
+          //  launchViz(4);
+            vHeight = 800;
+            vWidth = 1700;
+            vHideToolbar = true;
+            vHideTabs = true;
+            //launchViz(5);
+            vWidth = 1400;
+          //  launchViz(6);
+            vHeight = 800;
+            vWidth = 1000;
+            launchViz(7);
+          //  vHeight = 8000;
+    
+            //launchViz(8);
+           
+            vHideToolbar = false;
+            vHideTabs = false;
+            //launchViz(9);
+            vHeight = 1000;
+            vWidth = 1800;
+            launchViz(10);
+            vHeight = 800;
+            vWidth = 1500;
+            launchViz(11);
+            vWidth = 1000;
+        
+            
+            launchViz(12);
+            
+            launchViz(13);
+            vWidth = 1700;
+           // launchViz(14);
+            launchViz(15);
+            launchViz(16);
+    
+            // Launches the viz again with the new sizing at the current index of vizList.
+            }
+           
+        }
+    
+    
+        function launchViz(vizNav) {
+            // JS object targeting a div in the html document. (vizNav) will pass navigation values to move back and forth across vizList.
+            console.log("vizContainer" + vizNav)
+            console.log("devtype: " + devType)
+            var vizDiv = document.getElementById("vizContainer" + vizNav),
+                // Will embed the visualization on a div with id="VizContainer"
+                options = {
+                    device: devType,
+                    width: vWidth,
+                    height: vHeight,
+                    hideTabs: vHideTabs,
+                    hideToolbar: vHideToolbar,
+                    onFirstInteractive: function () {
+                        listenToMarksSelection();
+                    }
+                };
+    
+    
+            var vizURL = vizList[vizNav];
+            // Dynamic URL returning the string from vizList at index = vizNav (viz to be displayed).
+    
+            try {
+                // Initializes the viz from the array with desired options. 
+                viz = new tableau.Viz(vizDiv, vizURL, options);
+                if (!viz) throw 'viz not initialized'
+            }
+            catch (err) {
+                alert(err);
+            }
+            finally {
+                console.log('whatever')
+                console.count('initViz')
+            }
+    
+        }
+    
+    </script>
+
+
+
 </head>
 
 <body style="overflow: auto;">
@@ -6420,14 +6605,14 @@
                 <div id="vizContainer1"></div>
             </div>
           </div>
-          <div style="text-align: center;">
+<!--           <div style="text-align: center;">
             <div style="display: inline-block;">
                 <p> - </p>
                 <p> Exemplo de demonstrativo financeiro. Acelerador Tableau customizado para sua empresa </p>
                 <p> - </p>
                 <div id="vizContainer2"></div>
             </div>
-          </div>
+          </div> -->
        <!--     <div style="text-align: center;">
             <div style="display: inline-block;">
                 <p> - </p>
@@ -6493,14 +6678,14 @@
         <div style="text-align: center;">
             <div style="display: inline-block;">
     
-                <p> Abaixo um dashboard exemplo de RH disponível na comunidade do Tableau Public.</p>
+                <p> Abaixo um dashboard exemplo da REDFIN sobre dados do mercado imobiliário. Disponível na comunidade do Tableau Public.</p>
                 <p> Somente Desktop </p>
                 <div id="vizContainer11"></div>
             </div>
         </div>
         <div style="text-align: center;">
             <div style="display: inline-block;">
-                <p> Abaixo um dashboard para acompanhamento de RH. Exemplo de um parceiro Tableau.</p>
+                <p> Abaixo um dashboard para acompanhamento mensal da Redfin disponível no Tableau Public.</p>
                 <p> Somente Desktop </p>
                 <div id="vizContainer12"></div>
             </div>
@@ -6508,7 +6693,7 @@
          <div style="text-align: center;">
             <div style="display: inline-block;">
                 <p>-</p>
-                <p> Outro exemplo de dashboard acelerador para pesquisas de multipla escolha </p>
+                <p> Outro exemplo de dashboard no Tableau public com o indice de preços da Redfin </p>
                     <p>Somente Desktop</p>
                 <div id="vizContainer13"></div>
             </div>
